@@ -1,0 +1,39 @@
+from tkinter import *
+
+class MyGui():
+    def __init__(self):
+        self.root = Tk()
+        self.root.title("Get Coin Price")
+        self.root.minsize(500,400)
+        self.root.config(bg="#004030")
+        self.root.bind("<Escape>",self.close_root)
+
+        #center
+        self.height = 400
+        self.width = 500
+        screen_height = self.root.winfo_screenheight()
+        screen_width = self.root.winfo_screenwidth()
+        y = (screen_height - self.height) // 2
+        x = (screen_width - self.width) // 2
+        self.root.geometry(f"{self.width}x{self.height}+{x}+{y}")
+
+        #title
+        self.label_title = Label(self.root, text="Get Coin Price", font=("Impact", 20, "roman"), padx=30, pady=10, bg="#FFF9E5", fg="#004030")
+        self.label_title.place(rely=0.12, relx=0.5, anchor="center")
+
+        # label ask coin name
+        self.label_ask_name = Label(self.root, text="Enter coin name", font=("Helvetica", 15, "roman bold"), pady=10, padx=10, bg="#4A9782", fg="#FFF9E5")
+        self.label_ask_name.place(rely=0.40, relx=0.5, anchor="center")
+
+        # label entry coin name
+        self.entry_coin_name = Entry(self.root, font=("Helvetica", 10, "roman bold"), width=25, bg="#FFF9E5")
+        self.entry_coin_name.place(rely=0.50, relx=0.5, anchor="center")
+
+        # label coin price
+        self.label_coin_price = Label(self.root, text="", font=("Helvetica", 15, "roman bold"), pady=10, padx=10, bg="#4A9782", fg="#FFF9E5")
+        self.label_coin_price.place(rely=0.75, relx=0.5, anchor="center")
+
+    def close_root(self, event=None):
+        self.root.destroy()
+    def run_root(self):
+        self.root.mainloop()
