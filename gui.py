@@ -1,7 +1,8 @@
 from tkinter import *
 
 class MyGui():
-    def __init__(self):
+    def __init__(self,api_manager):
+        self.api_manager = api_manager
         self.root = Tk()
         self.root.title("Get Coin Price")
         self.root.minsize(500,400)
@@ -28,10 +29,16 @@ class MyGui():
         # label entry coin name
         self.entry_coin_name = Entry(self.root, font=("Helvetica", 10, "roman bold"), width=25, bg="#FFF9E5")
         self.entry_coin_name.place(rely=0.50, relx=0.5, anchor="center")
+        self.entry_coin_name.bind("<Return>",self.enter_pressed)
 
         # label coin price
-        self.label_coin_price = Label(self.root, text="", font=("Helvetica", 15, "roman bold"), pady=10, padx=10, bg="#4A9782", fg="#FFF9E5")
+        self.label_coin_price = Label(self.root, text="", font=("Helvetica", 20, "roman bold"), pady=10, padx=20, bg="#FFF9E5", fg="#004030")
         self.label_coin_price.place(rely=0.75, relx=0.5, anchor="center")
+        self.label_coin_price.place_forget()
+
+    def enter_pressed(self, event = None):
+        self.api_manager.get_price(coin=self.entry_coin_name.get().lower())
+        self.entry_coin_name.delete(0,END)
 
     def close_root(self, event=None):
         self.root.destroy()
