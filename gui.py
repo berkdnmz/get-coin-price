@@ -30,6 +30,7 @@ class MyGui():
         self.entry_coin_name = Entry(self.root, font=("Helvetica", 10, "roman bold"), width=25, bg="#FFF9E5")
         self.entry_coin_name.place(rely=0.50, relx=0.5, anchor="center")
         self.entry_coin_name.bind("<Return>",self.enter_pressed)
+        self.entry_coin_name.focus()
 
         # label coin price
         self.label_coin_price = Label(self.root, text="", font=("Helvetica", 20, "roman bold"), pady=10, padx=20, bg="#FFF9E5", fg="#004030")
@@ -37,7 +38,7 @@ class MyGui():
         self.label_coin_price.place_forget()
 
     def enter_pressed(self, event = None):
-        self.api_manager.get_price(coin=self.entry_coin_name.get().lower())
+        self.api_manager.get_price(coin=self.entry_coin_name.get().replace("ı","i").replace("İ","i"))
         self.entry_coin_name.delete(0,END)
 
     def close_root(self, event=None):
