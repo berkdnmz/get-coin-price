@@ -37,6 +37,10 @@ class MyGui():
         self.label_coin_price.place(rely=0.75, relx=0.5, anchor="center")
         self.label_coin_price.place_forget()
 
+        # Creator label
+        self.label_creator = Label(self.root, text="Created by Berk", font=("Times", 10, "bold italic"), pady=5, padx=5, bg="#FFF9E5", fg="#004030")
+        self.label_creator.place(relx=1.0, rely=1.0, anchor="se")
+
     def enter_pressed(self, event = None):
         self.api_manager.get_price(coin=self.entry_coin_name.get().replace("ı","i").replace("İ","i"))
         self.entry_coin_name.delete(0,END)
