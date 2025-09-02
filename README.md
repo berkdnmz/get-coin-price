@@ -1,4 +1,4 @@
-# Get Coin Price  
+# Get Coin Price
 A simple desktop application developed using Python and Tkinter to fetch real-time cryptocurrency prices.  
 It provides a clean and user-friendly experience for anyone who wants to quickly check coin values.  
 
@@ -6,24 +6,24 @@ It provides a clean and user-friendly experience for anyone who wants to quickly
 
 ## Table of Contents  
 
-- [English Section](#get-coin-price-)  
-- [Türkçe Bölüm](#get-coin-price-tr-)  
+- [English Section](#get-coin-price)  
+- [Türkçe Bölüm](#get-coin-price-tr)  
 
 ---
 
-## Contents  
+## Contents
 
-- [Overview](#overview-)  
-- [Features](#features-)  
-- [Installation](#installation-)  
-- [Usage](#usage-)  
-- [File Structure](#file-structure-)  
-- [License](#license-)  
-- [Author](#author-)  
+- [Overview](#overview)  
+- [Features](#features)  
+- [Installation](#installation)  
+- [Usage](#usage)  
+- [File Structure](#file-structure)  
+- [License](#license)  
+- [Author](#author)  
 
 ---
 
-## Overview  
+## Overview
 
 This project is a **GUI-based Python application** that allows users to fetch **real-time cryptocurrency prices** via the [CoinGecko API](https://www.coingecko.com/en/api).  
 
@@ -32,16 +32,16 @@ The app is built with **Tkinter** for the interface and **Requests** for API han
 
 ---
 
-## Features  
+## Features
 
-### Current Features  
+### Current Features
 - Simple and user-friendly **Tkinter** interface  
 - Real-time data from CoinGecko  
 - Search by coin name  
 - Error handling for invalid coin names  
 - Centered and styled GUI  
 
-### Planned Features  
+### Planned Features
 - Support for searching by **coin symbol** (e.g., BTC instead of bitcoin)  
 - Multiple currency support (USD, EUR, TRY etc.)  
 - Popular coin dropdown
@@ -49,7 +49,7 @@ The app is built with **Tkinter** for the interface and **Requests** for API han
 
 ---
 
-## Installation  
+## Installation
 
 1. **Clone the repository**  
 ```bash
@@ -72,7 +72,7 @@ The app is built with **Tkinter** for the interface and **Requests** for API han
 ```
 ---
 
-## Usage  
+## Usage
 
 1. Launch the app with:  
    python main.py  
@@ -82,7 +82,7 @@ The app is built with **Tkinter** for the interface and **Requests** for API han
 
 ---
 
-## File Structure  
+## File Structure
 ```
 get-coin-price/  
 │  
@@ -94,13 +94,13 @@ get-coin-price/
 ```
 ---
 
-## License  
+## License
 
 This project is open source under the [MIT License](LICENSE).  
 
 ---
 
-## Author  
+## Author
 
 **Berk Dönmez**  
 
@@ -116,26 +116,26 @@ You can contact me for any questions or suggestions regarding the project.
 
 ---
 
-# Get Coin Price [TR]  
+# Get Coin Price [TR]
 
 Python ve Tkinter kullanılarak geliştirilmiş, **gerçek zamanlı kripto para fiyatlarını** öğrenmenizi sağlayan basit bir masaüstü uygulamasıdır.  
 Anlık fiyat sorgulama yapmak isteyen kullanıcılar için sade ve pratik bir çözüm sunar.  
 
 ---
 
-## İçindekiler  
+## İçindekiler
 
-- [Genel Bakış](#genel-bakış-)  
-- [Özellikler](#özellikler-)  
-- [Kurulum](#kurulum-)  
-- [Kullanım](#kullanım-)  
-- [Dosya Yapısı](#dosya-yapısı-)  
-- [Lisans](#lisans-)  
-- [Yazar](#yazar-)  
+- [Genel Bakış](#genel-bakış)  
+- [Özellikler](#özellikler)  
+- [Kurulum](#kurulum)  
+- [Kullanım](#kullanım)  
+- [Dosya Yapısı](#dosya-yapısı)  
+- [Lisans](#lisans)  
+- [Yazar](#yazar)  
 
 ---
 
-## Genel Bakış  
+## Genel Bakış
 
 Bu proje, [CoinGecko API](https://www.coingecko.com/en/api) aracılığıyla **gerçek zamanlı kripto para fiyatlarını** görüntüleyen bir Python uygulamasıdır.  
 
@@ -143,16 +143,16 @@ Kullanıcı arayüzü **Tkinter** ile tasarlanmış, API iletişimi ise **Reques
 
 ---
 
-## Özellikler  
+## Özellikler
 
-### Mevcut Özellikler  
+### Mevcut Özellikler
 - **Kullanıcı dostu Tkinter arayüzü**  
 - CoinGecko’dan **gerçek zamanlı fiyat verileri**  
 - Coin adını girerek fiyat sorgulama  
 - Hatalı girişler için uyarı mesajları  
 - Ortalanmış ve tasarlanmış pencere  
 
-### Planlanan Özellikler  
+### Planlanan Özellikler
 - **Coin sembolüyle (BTC, ETH vb.) arama** desteği  
 - Birden fazla para birimi (USD, EUR, TRY vb.) desteği  
 - Popüler coinler için açılır menü
@@ -160,7 +160,7 @@ Kullanıcı arayüzü **Tkinter** ile tasarlanmış, API iletişimi ise **Reques
 
 ---
 
-## Kurulum  
+## Kurulum
 
 1. **Depoyu Klonlayın**  
 ```bash
@@ -181,7 +181,7 @@ Kullanıcı arayüzü **Tkinter** ile tasarlanmış, API iletişimi ise **Reques
 ```
 ---
 
-## Kullanım  
+## Kullanım
 
 1. Uygulamayı başlatmak için:  
    python main.py  
@@ -191,7 +191,7 @@ Kullanıcı arayüzü **Tkinter** ile tasarlanmış, API iletişimi ise **Reques
 
 ---
 
-## Dosya Yapısı  
+## Dosya Yapısı
 ```
 get-coin-price/  
 │  
@@ -203,13 +203,13 @@ get-coin-price/
 ```
 ---
 
-## Lisans  
+## Lisans
 
 Bu proje [MIT Lisansı](LICENSE) kapsamında açık kaynak olarak sunulmuştur.  
 
 ---
 
-## Yazar  
+## Yazar
 
 **Berk Dönmez**  
 - GitHub: [github.com/berkdnmz](https://github.com/berkdnmz)  
