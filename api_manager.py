@@ -23,8 +23,10 @@ class ApiManager():
             self.gui.label_coin_price.config(text=f"{coin.capitalize()} Price: {price} $")
             self.gui.label_coin_price.place(rely=0.75, relx=0.5, anchor="center")
         except KeyError:
-            return f"Error: '{coin}' not found!"
+            self.gui.show_error(f"Error: '{coin}' not found!")
+            return
         except requests.exceptions.RequestException as e:
-            return f"API error: {e}"
+            self.gui.show_error(f"API error: {e}")
+            return
 
 

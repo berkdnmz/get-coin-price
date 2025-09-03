@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter import messagebox
 
 class MyGui():
     def __init__(self,api_manager):
@@ -44,6 +45,9 @@ class MyGui():
     def enter_pressed(self, event = None):
         self.api_manager.get_price(coin=self.entry_coin_name.get().replace("ı","i").replace("İ","i"))
         self.entry_coin_name.delete(0,END)
+
+    def show_error(self, message : str):
+        messagebox.showerror("Error",message)
 
     def close_root(self, event=None):
         self.root.destroy()
